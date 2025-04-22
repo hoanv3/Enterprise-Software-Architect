@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using ReportingSolution.AKSWeatherApi.Common.ApiDescriptions;
 using ReportingSolution.AKSWeatherApi.Common.CustomerFilters;
 using ReportingSolution.Data;
+using ReportingSolution.Infrastructure;
 using ServiceComposer.AspNetCore;
 
 namespace ReportingSolution.AKSWeatherApi
@@ -15,6 +16,7 @@ namespace ReportingSolution.AKSWeatherApi
 
             // Add services to the container.
             builder.Services.AddData(builder.Configuration);
+            builder.Services.AddInfrastructure();
             builder.Services.AddViewModelComposition();
 
             builder.Services.AddCors(opt =>

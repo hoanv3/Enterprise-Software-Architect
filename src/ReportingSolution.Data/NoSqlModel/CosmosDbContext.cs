@@ -16,7 +16,8 @@ namespace ReportingSolution.Data.NoSqlModel
                 .HasDiscriminator<string>("type")
                 .HasValue<Sport>(nameof(Sport))
                 .HasValue<Product>(nameof(Product))
-                .HasValue<SalesInfo>(nameof(SalesInfo));
+                .HasValue<SalesInfo>(nameof(SalesInfo))
+                .HasValue<BankingEventData>(nameof(BankingEventData));
             modelBuilder
                 .Entity<BaseDocument>()
                 .ToContainer("Sports")

@@ -19,6 +19,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\ReportingSolution.Data\ReportingSolution.Data.csproj" />
+	  <ProjectReference Include="..\ReportingSolution.Infrastructure\ReportingSolution.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>
