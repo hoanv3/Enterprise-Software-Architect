@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingSolution.AKSWeatherApi", "src\ReportingSolution.AKSWeatherApi\ReportingSolution.AKSWeatherApi.csproj", "{88B34DF3-479B-4013-A350-B7583750889D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportingSolution.Data", "src\ReportingSolution.Data\ReportingSolution.Data.csproj", "{09D7A11A-4D88-4BCC-AA2B-6E0B9F7340C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88B34DF3-479B-4013-A350-B7583750889D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B34DF3-479B-4013-A350-B7583750889D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B34DF3-479B-4013-A350-B7583750889D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B34DF3-479B-4013-A350-B7583750889D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D7A11A-4D88-4BCC-AA2B-6E0B9F7340C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D7A11A-4D88-4BCC-AA2B-6E0B9F7340C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D7A11A-4D88-4BCC-AA2B-6E0B9F7340C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D7A11A-4D88-4BCC-AA2B-6E0B9F7340C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88B34DF3-479B-4013-A350-B7583750889D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{09D7A11A-4D88-4BCC-AA2B-6E0B9F7340C7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86CC5257-A827-414E-AF7F-4A6A4D89D3E8}
+	EndGlobalSection
+EndGlobal

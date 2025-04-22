@@ -1,0 +1,6 @@
+@ReportingSolution.AKSWeatherApi_HostAddress = http://localhost:5194
+
+GET {{ReportingSolution.AKSWeatherApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
