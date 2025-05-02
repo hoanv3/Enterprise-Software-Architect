@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+<!-- https://www.youtube.com/watch?v=SgCAPjyotLM -->
 	<Protobuf Include="..\ReportingSolution.gRPC.Server\Protos\blazorServer.proto" GrpcServices="Client" />
   </ItemGroup>
 
