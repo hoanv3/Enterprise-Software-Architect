@@ -18,7 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\ReportingSolution.Data\ReportingSolution.Data.csproj" />
+	  <ProjectReference Include="..\ReportingSolution.gRPC.SDK\ReportingSolution.gRPC.SDK.csproj" />
 	  <ProjectReference Include="..\ReportingSolution.Infrastructure\ReportingSolution.Infrastructure.csproj" />
 	</ItemGroup>
 

@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.30.2" />
     <PackageReference Include="Grpc.Net.Client" Version="2.71.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.71.0" />
     <PackageReference Include="Grpc.Tools" Version="2.71.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,11 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ReportingSolution.gRPC.Server\ReportingSolution.gRPC.Server.csproj" />
+	<Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\blogposts.proto" GrpcServices="Server" />
+	<Protobuf Include="Protos\blazorServer.proto" GrpcServices="Server" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
-  </ItemGroup>
 
 </Project>

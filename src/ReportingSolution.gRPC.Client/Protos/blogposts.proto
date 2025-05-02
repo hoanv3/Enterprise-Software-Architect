@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+option csharp_namespace = "ReportingSolution.gRPC.Client.Protos";
+
+// The definition of blogpost service.
+service BlogPost {
+    // Create
+    rpc CreateBlogPost(CreateBlogPostRequest) returns (CreateBlogPostResponse) {};
+    // Read List
+    rpc GetBlogPosts(GetBlogPostsRequest) returns (GetBlogPostReponse) {};
+    // Read Single
+    rpc GetBlogPostById(GetBlogPostRequest) returns (GetBlogPostReponse) {};
+    // Update
+    rpc UpdateBlogPost(UpdateBlogPostRequest) returns(empty) {};
+    // Delet a specific blog post
+    rpc DeleteBlogPost(DeleteBlogPostRequest) returns(empty) {};
+}
+
+message CreateBlogPostRequest {
+    string title = 1;
+    string category = 2;
+    string author = 3;
+    string content = 4;
+}
+
+message CreateBlogPostResponse {
+    string id = 1;
+}
+
+message GetBlogPostRequest {
+    string id = 1;
+}
+
+message GetBlogPostsRequest {}
+
+message GetBlogPostReponse {
+    string id = 1;
+    string title = 2;
+    string category = 3;
+    string author = 4;
+    string content = 5;
+    string dateCreated = 6;
+}
+
+message UpdateBlogPostRequest {
+    string id = 1;
+    string title = 2;
+    string category = 3;
+    string author = 4;
+    string content = 5;
+}
+
+message DeleteBlogPostRequest {
+    string id = 1;
+}
+
+message empty {
+}

@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option csharp_namespace = "ReportingSolution.gRPC.Server.Protos";
+package blazorserver;
+
+service Book {
+	rpc CreateBook(CreateBookRequest) returns(CreateBookResponse) {};
+
+	rpc GetBookById(GetBookByIdRequest) returns(GetBookByIdResponse) {};
+}
+
+message CreateBookRequest {
+	string title = 1;
+	string author = 2;
+	double price = 3;
+	string genre = 4;
+}
+
+message CreateBookResponse {
+  string id = 1;
+}
+
+message GetBookByIdRequest {
+  string id = 1;
+}
+
+message GetBookByIdResponse {
+	string title = 1;
+	string author = 2;
+	float price = 3;
+	string genre = 4;
+}

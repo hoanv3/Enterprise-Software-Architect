@@ -1,12 +1,12 @@
 ﻿{
    "CodeGenerationMode": 4,
-   "ContextClassName": "stevenContext",
+   "ContextClassName": "BlazorServerContext",
    "ContextNamespace": null,
    "FilterSchemas": false,
    "IncludeConnectionString": false,
    "ModelNamespace": null,
    "OutputContextPath": null,
-   "OutputPath": "Models",
+   "OutputPath": "BlazorServerModels",
    "PreserveCasingWithRegex": true,
    "ProjectRootNamespace": "ReportingSolution.Data",
    "Schemas": null,
@@ -15,7 +15,11 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "[dbo].[Users]",
+         "Name": "[dbo].[Books]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Developers]",
          "ObjectType": 0
       }
    ],
@@ -32,7 +36,6 @@
    "UseHandleBars": false,
    "UseHierarchyId": false,
    "UseInflector": false,
-   "UseInternalAccessModifiersForSprocsAndFunctions": false,
    "UseLegacyPluralizer": false,
    "UseManyToManyEntity": false,
    "UseNoDefaultConstructor": false,

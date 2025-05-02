@@ -2,11 +2,14 @@
 
 namespace ReportingSolution.gRPC.Client
 {
-    public class Program
+  public class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            using var gRpcChannel = GrpcChannel.ForAddress("https://localhost:7234");
-        }
+      using var gRpcChannel = GrpcChannel.ForAddress("https://localhost:7234");
+
+      // Create a client for calling the gRPC service  
+      //var client = new Book.
     }
+  }
 }
