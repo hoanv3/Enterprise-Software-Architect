@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "ReportingSolution.gRPC.Client";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1; // 1 defines the order of properties, it's basically nothing but the order of the property
+  string mobile = 2;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
